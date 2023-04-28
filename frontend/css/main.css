@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+/* font-family: 'Sigmar', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap');
+/* font-family: 'Nunito', sans-serif; */
+@import url('reset.css');
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/* Main Styling */
+body, input {
+    font-family: 'Sigmar', cursive;
+    font-size: 22px;
+    line-height: 36px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.3);
+}
+
+img {
+    max-width: 100%;
+}
+
+.container { 
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#searchbox {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+#game-form {
+
+}
+
+#game-form label {
+    font-size: 32px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#game-form input[type="text"] {
+    padding: 5px 25px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#resultspage #searchbox {
+    min-height: auto;
+    margin: 30px 0;
+}
+
+#gamesresults {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.game {
+    min-height: 340px;
+    border: 1px solid  rgba(0,0,0,0.3);
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.game-content {
+    border-top: 1px solid rgba(0,0,0,0.3);
+    padding: 5px 10px;
+}
+
+.game-image {
+    display: flex;
+}
+
+.game-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+    line-height: 22px;
+}
+
+.game-category, .game-platform, .game-popularity {
+    font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 18px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+.game-positive {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.game-details {
+    border-top: 1px solid rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+}
+
+footer p {
+    font-size: 16px;
+    color: rgb(99, 98, 98);
+}
