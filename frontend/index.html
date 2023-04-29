@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games Store</title>
 
     <!-- Stylesheet -->
@@ -21,8 +21,10 @@
                 <form action="" id="game-form">
                     <div class="form-group">
                         <label for="games">Search games</label>
-                        <input type="text" class="form-field" placeholder="Type your game name.." />
+                        <input type="text" id="gamename" class="form-field" placeholder="Type your game name.." autocomplete="off" />
                     </div>
+                    <!-- Searched Results -->
+                    <div id="searched-results" style="display: none"></div>
                 </form>
             </div>
         </div>
@@ -32,5 +34,6 @@
             <p>Copyright &copy; Games Store</p>
         </div>
     </footer>
+    <script src="./main.js" type="module"></script>
 </body>
 </html>

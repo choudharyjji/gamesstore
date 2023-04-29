@@ -45,7 +45,7 @@ img {
 }
 
 #game-form {
-
+    position: relative;
 }
 
 #game-form label {
@@ -113,6 +113,24 @@ img {
     text-align: center;
 }
 
+#searched-results {
+    position: absolute;
+    border: 1px solid rgba(0,0,0,0.3);
+    width: 100%;
+    left: 0;
+    top: 93px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#searched-results ul li {
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+#searched-results ul li:last-child {
+    border-bottom: 0px;
+}
 
 footer {
     position: fixed;
